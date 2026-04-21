@@ -1326,4 +1326,12 @@ export const definitions: DefinitionWithExtend[] = [
             publishDuplicateTransaction: true,
         },
     },
+    {
+        zigbeeModel: ['Smart Motor'],
+        model: 'Smart Motor',
+        vendor: 'Custom devices (DiY)',
+        description: 'Zigbee Roller Shade Motor',
+        extend: [m.battery(), m.windowCovering({"controls": ["lift"]})],
+    },
 ];
+
